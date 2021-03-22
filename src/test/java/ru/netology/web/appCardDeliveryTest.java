@@ -2,15 +2,10 @@ package ru.netology.web;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.selenide.AllureSelenide;
+import org.junit.jupiter.api.*;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.time.Duration;
 import java.time.LocalDate;
@@ -26,6 +21,12 @@ public class appCardDeliveryTest {
     @BeforeAll
     static void setUp() {
         Configuration.headless = true;
+        SelenideLogger.addListener("allure", new AllureSelenide());
+    }
+
+    @AfterAll
+    static void tearDownAll() {
+        SelenideLogger.removeListener("allure");
     }
 
 
@@ -33,8 +34,6 @@ public class appCardDeliveryTest {
 
     void shouldRegisterByOrderCard() {
         open("http://0.0.0.0:9999/");
-//        LocalDate date = LocalDate.now();
-//        LocalDate futureDate = date.plusDays(3);
 
         $("[data-test-id=city] .input__control").setValue("Москва");
         $("[data-test-id=date] .input__control").sendKeys(Keys.chord(Keys.SHIFT,Keys.HOME),Keys.BACK_SPACE);
