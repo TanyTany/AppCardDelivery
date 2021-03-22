@@ -1,0 +1,11 @@
+[ {
+  "uid" : "813347b76ecee1d4",
+  "name" : "shouldRegisterByOrderCard()",
+  "time" : {
+    "start" : 1616413169852,
+    "stop" : 1616413187554,
+    "duration" : 17702
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

@@ -1,0 +1,22 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "ru.netology.web.appCardDeliveryTest",
+    "children" : [ {
+      "name" : "shouldRegisterByOrderCard()",
+      "uid" : "813347b76ecee1d4",
+      "parentUid" : "f49e2ab9d1b0ecc9238a8aa60266515b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1616413169852,
+        "stop" : 1616413187554,
+        "duration" : 17702
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "f49e2ab9d1b0ecc9238a8aa60266515b"
+  } ],
+  "name" : "suites"
+}

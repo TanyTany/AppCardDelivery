@@ -1,0 +1,26 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "192.168.0.12",
+    "children" : [ {
+      "name" : "40594@192.168.0.12.Test worker(12)",
+      "children" : [ {
+        "name" : "shouldRegisterByOrderCard()",
+        "uid" : "813347b76ecee1d4",
+        "parentUid" : "5be381777edcefea1f2bc43521916fb3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616413169852,
+          "stop" : 1616413187554,
+          "duration" : 17702
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5be381777edcefea1f2bc43521916fb3"
+    } ],
+    "uid" : "e8e473338404f07fde9137b5fc3caba6"
+  } ],
+  "name" : "timeline"
+}

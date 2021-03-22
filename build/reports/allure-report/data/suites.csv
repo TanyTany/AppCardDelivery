@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Mar 22 14:39:29 MSK 2021","Mon Mar 22 14:39:47 MSK 2021","17702","","ru.netology.web.appCardDeliveryTest","","ru.netology.web.appCardDeliveryTest","shouldRegisterByOrderCard","shouldRegisterByOrderCard()",""
